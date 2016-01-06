@@ -1,5 +1,5 @@
-var myApp = angular.module('myApp',[]);
-myApp.controller(
+var prayerWallApp = angular.module('prayerWallApp',[]);
+prayerWallApp.controller(
 	'PrayerController', 
 	function($scope, prayerService){
 		$scope.prayer_requests = [];
@@ -47,7 +47,7 @@ myApp.controller(
         };
 	});
 
-myApp.service(
+prayerWallApp.service(
     "prayerService",
     function( $http, $q ) {
         // Return public API.
